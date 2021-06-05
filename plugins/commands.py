@@ -8,8 +8,8 @@ from translation import Translation
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-@Client.on_message(filters.private & filters.command(['start']))
-async def start(client, message):
+@Client.on_message(filters.private & filters.command(['st']))
+async def st(client, message):
     buttons = [[
         InlineKeyboardButton('📜 Support Group', url='https://t.me/DxHelpDesk'),
         InlineKeyboardButton('Update Channel ♻️', url='https://t.me/DX_Botz')
@@ -24,7 +24,7 @@ async def start(client, message):
                 message.from_user.first_name),
         parse_mode="html")
 
-@Client.on_message(filters.private & filters.command(['help']))
+@Client.on_message(filters.private & filters.command(['hp']))
 async def help(client, message):
     buttons = [[
         InlineKeyboardButton('close 🔐', callback_data='close_btn')
