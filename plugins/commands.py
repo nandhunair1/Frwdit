@@ -13,7 +13,7 @@ async def start(client, message):
     buttons = [[
         InlineKeyboardButton('🗣️Group', url='t.me/tvseriezzz'),
         InlineKeyboardButton('📢Updates', url='t.me/tvseriezzz_update'),
-        InlineKeyboardButton('📝 Chat Group, url='https://t.me/MrCVENOM_chat'),
+        InlineKeyboardButton('📝 Chat Group', url='https://t.me/MrCVENOM_chat'),
     ],[
         InlineKeyboardButton('🎭 Group 🎭', url='https://t.me/tvseriezzz')
     ]]
